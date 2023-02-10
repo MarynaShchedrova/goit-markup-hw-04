@@ -9,6 +9,7 @@
   --accent-color: #4d5ae5;
   --ocean-color: #404bbf;
   --licht-slate-color: #8e8f99;
+  --iric-color: #4d5ae5;
 }
 h1,
 h2,
@@ -136,7 +137,10 @@ body {
 /*===========Hero=======*/
 .hero {
   padding: 188px 0;
-  background-color: var(--primary-text-color-thema-ligt);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7)),
+    url('../images/fonts/people-office.png');
+  background-size: cover;
+  background-color: #2e2f42;
 }
 .hero-btn {
   display: block;
@@ -250,6 +254,11 @@ body {
   /* padding-top: 24px; */
   margin-bottom: 72px;
 }
+/* ======Advance======= */
+.advance {
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
 .advance-list {
   display: flex;
   /* justify-content: space-between; */
@@ -271,10 +280,20 @@ body {
   line-height: 1.5;
   color: #434455;
 }
+.advence-link {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--licht-slate-color);
+}
 .work {
   display: flex;
   justify-content: space-between;
 }
+/* =====Tem======= */
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -302,6 +321,31 @@ body {
 .team-item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 48px;
 } */
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.team-soc-item {
+}
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iric-color);
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--ocean-color);
+}
+.team-soc-icon {
+  fill: #ffffff;
+}
+/* ======Card====== */
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -345,8 +389,12 @@ body {
 .customers-icon {
   fill: var(--licht-slate-color);
 }
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--ocean-color);
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--ocean-color);
 }
 /* =======/Customers======= */
