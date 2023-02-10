@@ -138,7 +138,7 @@ body {
 .hero {
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7)),
-    url('../images/fonts/people_office.png');
+    url('./images/fonts/people_office.png');
   background-size: cover;
 }
 .hero-btn {
@@ -399,6 +399,9 @@ body {
 }
 /* =======/Customers======= */
 /* ======Footer====== */
+.footer-section {
+  display: flex;
+}
 .footer {
   padding: 100px 0;
   background-color: var(--primary-text-color);
@@ -411,6 +414,33 @@ body {
 .footer-logo {
   display: flex;
   margin-bottom: 16px;
+}
+.footer-content {
+  margin-right: 120px;
+}
+.social {
+  display: flex;
+  width: 208px;
+  color: var(--primary-white-color);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.social-item {
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f4f4fd;
+  opacity: 0.1;
+  gap: 10px;
+  margin-top: 8px;
+}
+.social-icon {
+  fill: #ffffff;
 }
 .logo-color {
   color: #ffffff;
