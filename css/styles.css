@@ -140,7 +140,6 @@ body {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7)),
     url('../images/fonts/people_office.png');
   background-size: cover;
-  /* background-color: #2e2f42; */
 }
 .hero-btn {
   display: block;
@@ -365,6 +364,7 @@ body {
 /* =======Customers======= */
 .customers-title {
   margin-top: 130px;
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
