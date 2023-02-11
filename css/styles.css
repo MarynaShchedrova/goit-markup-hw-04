@@ -434,6 +434,9 @@ body {
   gap: 10px;
   margin-top: 8px;
 }
+.social-icon {
+  fill: #ffffff;
+}
 .social-link {
   display: flex;
   justify-content: left;
@@ -444,9 +447,7 @@ body {
   background-color: #f4f4fd;
   opacity: 0.1;
 }
-.social-icon {
-  fill: #ffffff;
-}
+
 .logo-color {
   color: #ffffff;
 }
