@@ -10,6 +10,7 @@
   --ocean-color: #404bbf;
   --licht-slate-color: #8e8f99;
   --iric-color: #4d5ae5;
+  --green-color: #31d0aa;
 }
 h1,
 h2,
@@ -447,7 +448,10 @@ body {
   background-color: #f4f4fd;
   opacity: 0.1;
 }
-
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--green-color);
+}
 .logo-color {
   color: #ffffff;
 }
