@@ -48,8 +48,8 @@ body {
   letter-spacing: 0.02em;
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .services {
   padding-bottom: 120px;
@@ -67,8 +67,6 @@ body {
   align-items: center;
 }
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .main-nav {
@@ -83,6 +81,8 @@ body {
   margin-right: 40px;
 }
 .menu-link {
+  display: block;
+  padding: 24px 0;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.5;
@@ -250,9 +250,7 @@ body {
   background-color: #404bbf;
   color: var(--primary-white-color);
 }
-.team {
-  background-color: #f4f4fd;
-}
+
 /* =====UL===== */
 .filter-list {
   display: flex;
@@ -288,7 +286,7 @@ body {
   line-height: 1.5;
   color: #434455;
 }
-.advence-link {
+.advence-content {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
@@ -302,6 +300,9 @@ body {
   justify-content: space-between;
 }
 /* =====Tem======= */
+.team {
+  background-color: #f4f4fd;
+}
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -314,6 +315,10 @@ body {
 
   /* flex-basis: calc((100%-72px) / 4);
   gap: 32 px; */
+}
+.team-content-wapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-title {
   color: var(--primary-text-color);
@@ -332,7 +337,7 @@ body {
 .team-soc {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
   margin-top: 8px;
 }
 
@@ -364,7 +369,8 @@ body {
   box-shadow: #404bbf;
 } */
 .card-item:hover {
-  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 /* .card-item:not(:nth-child(3n)) {
   margin-right: 24px;
@@ -381,8 +387,6 @@ body {
 .customers-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
-  align-items: center;
 }
 .customers-link {
   width: 168px;
@@ -430,6 +434,7 @@ body {
   color: var(--primary-white-color);
   line-height: 1.5;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 .footer-list {
   display: flex;
